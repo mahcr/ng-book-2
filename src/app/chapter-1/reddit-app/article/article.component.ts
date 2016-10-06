@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Article } from '../index';
+import { Article } from '../../';
 
 @Component({
     selector: 'reddit-article',

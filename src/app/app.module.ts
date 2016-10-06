@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { HelloWord } from './chapter-1/hello-world/hello-world.component';
+import { ArticleComponent, RedditApp } from './chapter-1/';
 
 @NgModule({
   declarations: [
-    HelloWord
+    ArticleComponent,
+    RedditApp
   ],
   imports: [
     BrowserModule,
@@ -15,6 +16,6 @@ import { HelloWord } from './chapter-1/hello-world/hello-world.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [HelloWord]
+  bootstrap: [RedditApp]
 })
 export class AppModule { }

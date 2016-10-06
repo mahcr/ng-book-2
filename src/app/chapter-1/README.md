@@ -1,5 +1,6 @@
 # Chapter 1 / My First Ng2 App
 
+
 Angular 2 depend on these libraries:
 - ES6-shim - Polyfill to support ES6 on old browsers
 - zone.js - Use for the detecting changes
@@ -27,10 +28,29 @@ Link: [hello-word.component.ts](./hello-word.component.ts)
 
 
 ### Booting our app
+
+@NgModule annotation
+It has three keys: declartions, imports and bootstrap
+
+* Declarations: define the components in this module
+* Imports: Describe which dependecies this module has
+* Bootstrap: Tell Ng the module is used to bootstrap
+
 ```
-bootstrap(HelloWord)
+@NgModule({
+  declarations: [ HelloWorld ],
+  imports: [ BrowserModule ],
+  bootstrap: [ HelloWorld ],
+})
+class HelloWorldAppModule {}
+
+platformBrowserDynamic().bootstrapModule(HelloWorldAppModule);
 ```
-This will start the app
+
+As you know angular can run in different platforms:
+* dynamically - when we open the page in the browser
+* AoT 
+
 
 ### Adding data
 
