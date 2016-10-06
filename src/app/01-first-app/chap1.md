@@ -1,6 +1,5 @@
 # Chapter 1 / My First Ng2 App
 
-
 Angular 2 depend on these libraries:
 - ES6-shim - Polyfill to support ES6 on old browsers
 - zone.js - Use for the detecting changes
