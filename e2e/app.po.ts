@@ -1,4 +1,6 @@
-export class NgBook2Page {
+import { browser, element, by } from 'protractor';
+
+export class Ng2Page {
   navigateTo() {
     return browser.get('/');
   }
