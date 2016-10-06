@@ -23,8 +23,7 @@ import { ArticleComponent, Article } from './index';
         <div class="ui grid posts">
           <reddit-article *ngFor="let article of sortedArticles()" [articleInput]="article"></reddit-article>
         </div>
-    `,
-    directives:  [ ArticleComponent ]
+    `
 })
 export class RedditApp {
 
